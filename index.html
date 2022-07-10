@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="/" id="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" /><br /><br />
+
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" class="email" required /><br /><br />
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" /><br /><br />
+
+    <label for="body_input">What is your favorite web project?</label><br />
+    <textarea rows="4" cols="50" name="body_input" class="body_input" required></textarea><br /><br />
+
+    <label for="color">What is your color family preference?</label>
+    <select name="color" id="color">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="yellow">Yellow</option>
+    </select><br><br>
+
+    <label>When are you most available to discuss the details of your request?</label><br><br>
+    <input type="checkbox" id="checkbox" name="checkbox" value="Mornings" class="checkbox">
+    <label for="check"> Mornings</label><br>
+    <input type="checkbox" id="checkbox" name="checkbox" value="Evenings" class="checkbox">
+    <label for="check"> Evenings</label><br><br>
+
+
+    <label>Choose your favorite web language:</label><br><br>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>--------------------Form Output-----------------------</p>
+
+  <label class="output">Name:</label>
+  <p id="namevalue"></p>
+  <label class="output">Email:</label>
+  <p id="emailvalue"></p>
+  <label class="output">Date:</label>
+  <p id="datevalue"></p>
+  <label class="output">BodyInput:</label>
+  <p id="bodyinputvalue"></p>
+  <label class="output">Colour:</label>
+  <p id="colorvalue"></p>
+  <label class="output">Checkbox:</label>
+  <p id="checkboxvalue"></p>
+  <label class="output">Favorite Web language:</label>
+  <p id="webvalue"></p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
